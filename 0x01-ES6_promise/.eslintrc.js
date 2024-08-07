@@ -20,7 +20,7 @@ module.exports = {
     "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"],
     quotes: [
       "error",
-      "double",
+      "single",
       {
         allowTemplateLiterals: true,
         avoidEscape: true,
