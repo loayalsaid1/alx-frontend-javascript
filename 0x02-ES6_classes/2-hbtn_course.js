@@ -38,10 +38,10 @@ export default class HolbertonCourse {
   }
 
   set students(value) {
-    this._students = HolbertonCourse._checkType(value, 'Array', 'Students');
+    this._students = HolbertonCourse._checkType(value, 'array', 'Students');
 
     value.forEach((element) => {
-      if (!(element instanceof String)) {
+      if (typeof element !== 'string') {
         throw new TypeError('Students must be an array of strings');
       }
     });
